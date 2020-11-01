@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private List<infoMain> getdata() {
         List<infoMain> data = new ArrayList<>();
         String title[] = {"Part01: Simple SmartPhone","Part02: Simple SmartPhone By Dagger2(@Inject, @Component)",
-        "Part03: Simple SmartPhone By Dagger2(@Module, @Provides)"};
+        "Part03: Simple SmartPhone By Dagger2(@Module, @Provides)","Part04: Simple SmartPhone By Dagger2(interface Part01)",
+                "Part05: Simple SmartPhone By Dagger2(interface Part02)"};
 
 
         for (int i = 0; i < title.length ; i++) {

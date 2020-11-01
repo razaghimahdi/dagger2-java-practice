@@ -27,7 +27,7 @@ public class Part03Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part03);
 
-        /**NOTE: to use this method you need ro rebuild project*/
+        /**NOTE: to use this method you need to rebuild project*/
         SmartPhoneComponent smartPhoneComponent = DaggerSmartPhoneComponent.create();
         smartPhone = smartPhoneComponent.getSmartPhone();
         smartPhone.makeACall();
