@@ -21,7 +21,7 @@ It is based on the Java Specification Request (JSR) 330.
 It uses code generation and is based on annotations.  
 The generated code is very relatively easy to read and debug.
 
-some popular annotation in Dagger2:
+#### some popular annotation in Dagger2:
 
 ##### @Module:
 Used on classes which contains methods annotated with @Provides.
