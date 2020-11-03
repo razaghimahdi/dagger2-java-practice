@@ -3,13 +3,26 @@
     package="com.example.dagger2_example">
 
     <application
+        android:name=".view.part10.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.Part07Activity"></activity>
+        <activity android:name=".view.part10.Part10Activity"></activity>
+        <activity
+            android:name=".view.part09.Part09_02Activity"
+            android:label="@string/title_activity_part09_02"
+            android:parentActivityName=".view.part09.Part09Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.part09.Part09Activity" />
+        </activity>
+        <activity android:name=".view.part09.Part09Activity" />
+        <activity android:name=".view.part08.Part08Activity" />
+        <activity android:name=".view.Part07Activity" />
         <activity android:name=".view.Part06Activity" />
         <activity android:name=".view.Part05Activity" />
         <activity android:name=".view.Part04Activity" />

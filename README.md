@@ -41,3 +41,6 @@ request dependencies. Can be used on a constructor, a field, or a method.You use
  If you annotate a constructor with @Inject, Dagger 2 can also use an instance of this object to fulfill dependencies.  
  This was done to avoid the definition of lots of @Provides methods for these objects.
 
+
+<img src="screenshots/Screenshot_1604392161.png" width="300">
+<img src="screenshots/Screenshot_1604392164.png" width="300">
