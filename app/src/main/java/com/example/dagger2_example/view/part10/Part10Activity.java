@@ -28,7 +28,7 @@ import javax.inject.Inject;
 
 public class Part10Activity extends AppCompatActivity {
 
-    /** We hav 2 dependencies here: Application and the ContactsAppDatabase.
+    /** We have 2 dependencies here: Application and the ContactsAppDatabase.
      * */
 
 

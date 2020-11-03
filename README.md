@@ -30,7 +30,11 @@ Used on classes which contains methods annotated with @Provides.
 Can be used on methods in classes annotated with @Module and is used for methods which provides objects for dependencies injection.
 
 ##### @Singleton:
-Single instance of this provided object is created and shared.
+Single instance of this provided object is created and shared.  
+Every time we creates a mainActivity dagger creates a new smart phone object and inject.  
+But in many cases having dependencies as singleton is much efficient,  
+It means dagger creates only one smartphone object as we have annotated it as a singleton.  
+@Singleton makes your class a single instance in your dependencies graph.This instance will be a "singleton" as long as Component object exists.
 
 ##### @Component:
 Used on an interface.
