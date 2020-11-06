@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         "Part03: Simple SmartPhone By Dagger2(@Module, @Provides)","Part04: Simple SmartPhone By Dagger2(interface Part01)",
                 "Part05: Simple SmartPhone By Dagger2(interface Part02)","Part06: Simple SmartPhone By Dagger2(filed injection)",
                 "Part07: Simple SmartPhone By Dagger2(pass value to module)","Part08: Simple SmartPhone By Dagger2(custom Application class)",
-                "Part09: Simple SmartPhone By Dagger2(singleton)","Part10: Contact Manager"};
+                "Part09: Simple SmartPhone By Dagger2(singleton)","Part10: Contact Manager","Part11:Gallery RecyclerView(@Component.Builder, @BindsInstance)"};
 
 
         for (int i = 0; i < title.length ; i++) {

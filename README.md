@@ -45,6 +45,17 @@ request dependencies. Can be used on a constructor, a field, or a method.You use
  If you annotate a constructor with @Inject, Dagger 2 can also use an instance of this object to fulfill dependencies.  
  This was done to avoid the definition of lots of @Provides methods for these objects.
 
+##### @bindsInstance:
+is used for removing constructor from module and chaining modules where you get component.
+
+##### @Component.Builder:
+A builder for a component. Components may have a single nested static abstract class or interface annotated with @Component.Builder. If they do, then the component's generated builder will match the API in the type.  
+###### Builders must follow some rules:
+A single abstract method with no arguments must exist, and must return the component. (This is typically the build() method.)  
+All other abstract methods must take a single argument and must return void, the Builder type, or a supertype of the builder.  
+Each component dependency must have an abstract setter method.  
+Each module dependency that Dagger can't instantiate itself (e.g, the module doesn't have a visible no-args constructor) must have an abstract setter method. Other module dependencies (ones that Dagger can instantiate) are allowed, but not required.  
+Non-abstract methods are allowed, but ignored as far as validation and builder generation are concerned.
 
 <img src="screenshots/Screenshot_1604392161.png" width="300">
-<img src="screenshots/Screenshot_1604392164.png" width="300">
+<img src="screenshots/Screenshot_1604649323.png" width="300">

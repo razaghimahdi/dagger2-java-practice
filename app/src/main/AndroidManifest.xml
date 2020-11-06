@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.part10.Part10Activity"></activity>
+        <activity android:name=".view.part11.Part11Activity"></activity>
+        <activity android:name=".view.part10.Part10Activity" />
         <activity
             android:name=".view.part09.Part09_02Activity"
             android:label="@string/title_activity_part09_02"

@@ -25,6 +25,7 @@ import com.example.dagger2_example.view.Part07Activity;
 import com.example.dagger2_example.view.part10.Part10Activity;
 import com.example.dagger2_example.view.part09.Part09Activity;
 import com.example.dagger2_example.view.part08.Part08Activity;
+import com.example.dagger2_example.view.part11.Part11Activity;
 
 import java.util.Collections;
 import java.util.List;
@@ -117,6 +118,10 @@ public class AdapterMain extends RecyclerView.Adapter<AdapterMain.ViewHolder> {
                     }
                     if (getPosition() == 9){
                         Intent intent = new Intent(context, Part10Activity.class);
+                        context.startActivity(intent);
+                    }
+                    if (getPosition() == 10){
+                        Intent intent = new Intent(context, Part11Activity.class);
                         context.startActivity(intent);
                     }
 
